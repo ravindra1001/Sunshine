@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:title="@string/pref_units_label"
+        android:summary="select temprature unit"
+        android:key="@string/pref_units_key"
+        android:defaultValue="@string/pref_units_default"
+        android:entries="@array/pref_units_options"
+        android:entryValues="@array/pref_units_values"
+    />
+
+    <EditTextPreference android:title="@string/pref_location_label"
+        android:key="@string/pref_location_key"
+        android:summary="Please provide your location"
+        android:defaultValue="@string/pref_location_default"></EditTextPreference>
+
+    <CheckBoxPreference
+        android:title="Weather Notifications"
+        android:key="enable_notifications"
+        android:summaryOff="Not Enabled"
+        android:summaryOn="@string/perf_enable_notification_true"
+        android:defaultValue="@string/perf_enable_notification_default"/>
+
+</PreferenceScreen>
